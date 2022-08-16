@@ -1,0 +1,65 @@
+﻿@model UserViewModel
+<div class="card">     
+<div class="card-header">
+<div class="card-title-wrap bar-success">
+<h4 class="card-title">Add user </h4>
+</div>
+</div>
+<div class="card-body">
+<div class="px-3">
+<form asp-action="AddNewUser"  method="post" class="form form-horizontal">
+<div class="form-body">
+<div class="form-group row">
+<label class="col-md-3 label-control" for="projectinput1">Full Name : </label>
+<div class="col-md-9">
+<input asp-for="Name" class="form-control">
+<span style="margin-left:10px" class="text-danger" asp-validation-for="Name"></span>
+</div>
+</div>
+<div class="form-group row">
+<label class="col-md-3 label-control" for="projectinput1">Email Address : </label>
+<div class="col-md-9">
+<input asp-for="Email" class="form-control">
+<span style="margin-left:10px" class="text-danger" asp-validation-for="Email"></span>
+</div>
+</div>
+<div class="form-group row">
+<label class="col-md-3 label-control" for="projectinput1">Password: </label>
+<div class="col-md-9">
+<input asp-for="PassWord" class="form-control">
+<span style="margin-left:10px" class="text-danger" asp-validation-for="PassWord"></span>
+</div>
+</div>
+<div class="form-group row">
+<label class="col-md-3 label-control" for="projectinput7">Group Name : </label>
+<div class="col-md-9">
+<select id="select" asp-for="GroupName" class="form-control">
+    <option value="">Select Group name</option>
+    @foreach (IdentityRole role in ViewBag.roles)
+    {
+        <option value="@role.Name">@role.Name</option>
+    }
+</select>
+<span style="margin-left:10px" class="text-danger" asp-validation-for="GroupName"></span>
+</div>
+</div>
+</div>
+<div class="form-actions">
+ <a asp-action="Index" asp-controller="User">
+<button type="button" class="btn btn-danger mr-1">
+<i class="icon-trash"></i> Cancel
+</button>
+</a>
+<button onclick="writein()" type="submit" class="btn btn-success">
+<i class="icon-note"></i> Save
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

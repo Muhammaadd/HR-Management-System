@@ -1,0 +1,159 @@
+﻿@model PermissionsFormViewModel
+@{
+    ViewData["Title"] = "UpdateGroup";
+}
+<style>
+.form-check-input[type=checkbox] {
+    margin-left: 0px;
+}
+</style>
+<section id="configuration">
+<form asp-action="Edit" method="post">
+<div class="row">
+<div class="col-12">
+<div class="card">
+<div class="card-header">
+<div class="card-title-wrap bar-success">
+<h4 class="card-title">Edit Group </h4>
+</div>
+</div>
+<div class="card-body collapse show">
+<div class="row">
+<div class="col-lg-2"></div>
+<div class="col-sm-12 col-md-9">
+    <div id="DataTables_Table_0_filter" class="dataTables_filter">
+        <label>Group Name :
+            <input asp-for="RoleName" type="search" class="form-control form-control-sm"  aria-controls="DataTables_Table_0" style="height: 58px;">
+            <input type="hidden" asp-for="RoleId" />
+        </label>
+    </div>
+    <span style="margin-left:100px" class="text-danger" asp-validation-for="RoleName"></span>
+</div>
+</div>
+<span class="text-danger" style="margin-left:10px;font-weight:700" asp-validation-for="RoleCalims"></span>
+<table class="table table-striped table-bordered zero-configuration mt-3 table-group">
+<thead>
+<tr>
+<th>Module Name</th>
+<th>Show </th>
+<th>Add</th>
+<th>Edit</th>
+<th>delete</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>employee</td>
+@for(int i=0;i<4;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td><input type="checkbox" asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" /></td>
+}
+</tr>
+<tr>
+<td>Online Chat</td>
+@for(int i=4;i<8;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+
+</tr>
+<tr>
+<td>Genral Settings</td>
+@for(int i=8;i<12;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>
+<tr>
+<td>Premissions</td>
+@for(int i=12;i<16;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>
+<tr>
+<td>Users</td>
+
+@for(int i=16;i<20;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>
+<tr>
+<td>
+Attendance</td>
+
+@for(int i=20;i<24;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>
+<tr>
+<td>Salary report</td>
+
+@for(int i=24;i<28;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>  
+<tr>
+<td>Department</td>
+
+@for(int i=28;i<32;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tr>
+<tr>
+<td>Exception</td>
+
+@for(int i=32;i<36;i++)
+{
+<input type="hidden" asp-for="@Model.RoleCalims[i].DisplayValue" />
+<td>
+<input asp-for="@Model.RoleCalims[i].IsSelected" class="form-check-input" />
+</td>
+}
+</tbody>
+</table>
+<div class="form-actions">							
+<button type="submit" class="btn btn-success">
+<i class="icon-note"></i> Save
+</button>
+<a asp-action="Index" asp-controller="Group" class="btn btn-danger mr-3">
+<i class="icon-trash"></i> Cancel
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</section>
+@section Scripts {
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

@@ -1,0 +1,110 @@
+﻿@model List<SalaryWithAttend_Emp_GenSettingsVM>
+@{
+    int i = 1;
+}
+                   
+                                <div class="card">
+                                         <div class="card-header">
+                                                <div class="card-title-wrap bar-success">
+                                                    <h4 class="card-title">Salary report</h4>
+                                                </div>
+                                         </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                            
+                            <form asp-action="SalaryReport" method="get">
+                                <div class="form-group">
+                                    <label > Employee Name </label>
+                                     <select name="empId" value=@ViewBag.empID asp-items="@(new SelectList(ViewBag.emplist,"Id","Name"))">
+                                         <option></option>
+                                      </select>
+
+
+                                     <label > Date</label>
+                                    <input type="date" id="datemonth"  value="@ViewBag.datemonth" name="datemonth" min="2010-1-1"/>
+                                   
+                                   
+
+                                    <input type="submit" value="Search" class="btn btn-primary"/>
+
+
+                                </div>
+
+
+                            </form>
+
+
+
+
+
+
+
+                        <table class="table table-hover table-bordered ">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Employee </th>
+                                    <th>Phone</th>
+                                    <th>Salary</th>
+                                    <th>Attendance </th>
+                                    <th>Absence </th>
+                                    <th>Overtime (EGP) </th>
+                                    <th>Deduction (EGP)</th>
+                                    <th>Extra (EGP)</th>
+                                    <th>Deduction (EGP)</th>
+                        <th>Total (EGP)</th>
+                        <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in @Model)
+                                {
+                                <tr>
+                                    <td>@i</td>                     
+
+                                    <td>@item.EmployeeNameVM</td>
+                                    <td>@item.EmpolyeeContactNumberVM</td>
+                                    <td>@item.MonthSalaryBeforeOperations</td>
+                                    <td>@item.AttendanceDaysVM</td>
+                                    <td>@item.AbsenceeDaysVM</td>
+                                    <td>@item.TotalMoneyAdded</td>
+                                    <td>@item.TotalMoneyDeducted</td>
+                                    <td>@item.OverTimePricePerHour</td>
+                                    <td>@item.DeductionPricePerHour</td>
+                                    <td>@item.MonthSalaryAfterOperations</td>
+                                   
+                                    <td><a class="btn btn-danger mb-2" asp-controller="Salary"  asp-action="EmpolyeeSalaryReport" asp-route-id="@item.EmployeeIdVM" asp-route-targetM="@item.filterdate.Month" asp-route-targetY="@item.filterdate.Year" name="targetdate"   > Invoice </a> </td>
+                                     @{i++;}
+                                       
+                                  
+                                </tr>
+                                }                                                                                                                                                                               
+                             </tbody>
+                    
+                            </table>
+                                            </div>
+                                </div>
+                                 </div>
+                            </div>
+                    </div>
+            </section>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+
+    <script>
+        $(document).ready(function() {
+            $('#empId').on('change', function() {
+                var empId=  $(this).val();
+                
+                console.log(empId);
+                });
+        });
+
+
+    </script>
+}

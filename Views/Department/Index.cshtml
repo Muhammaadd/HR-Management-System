@@ -1,0 +1,90 @@
+﻿@model List<Department>
+
+  @{
+  ViewData["Title"] = "Index";
+  }
+
+  <section id="configuration">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title-wrap bar-success">
+              <h4 class="card-title">Departments Information</h4>
+            </div>
+          </div>
+          <div class="card-body collapse show">
+            <div class="card-block card-dashboard">
+              <div class="row" style="justify-content: space-between;align-items: center;">
+                  <div class="col-sm-12 col-md-5">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                    <label>Search:
+                      <input type="search" id="search" onkeyup="Filter(event)" class="form-control form-control" placeholder=""
+                        aria-controls="DataTables_Table_0">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <a class="btn" href="/Department/Add">
+                    <button id="addRow" class="btn btn-primary py-2"> <i class="ft-plus"></i>&nbsp;
+                      Add new Department</button></a>
+                </div>
+              </div>
+                <table  class="table table-hover ">
+                <thead class="bg-primary text-white">
+                 <tr>
+                    <th class="text-center">Id</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tbody id="table">
+                  @foreach (var item in Model)
+                  {
+                  <tr>
+                    <th class="text-center">@item.Id</th>
+                    <td class="text-center">@item.Name</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" class="btn col-2 ms-2 btn-outline-dark" asp-route-id=@item.Id>Edit</a>
+
+                    </td>
+                  </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  @section Scripts{
+
+<script>    
+    function confirmAction(){
+        if (!confirm("Are You sure?"))
+            event.preventDefault();
+    }   
+    function Filter()
+    {  var rows = document.querySelectorAll("tr");
+        var tableheader = document.querySelector("tr");
+        var name = event.target.value;
+        for(var i of rows)
+        {
+             i.style.display = "table-row";
+        }
+        for (var i of rows) 
+        {
+            if (!i.children[1].innerHTML.toLowerCase().includes(name.toLowerCase())) 
+            {
+                i.style.display = "none";
+
+            }
+        }
+        tableheader.style.display = "table-row";
+  };    
+
+
+  </script>
+
+  }

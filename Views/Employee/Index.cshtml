@@ -1,0 +1,117 @@
+﻿@model IEnumerable<HRSystem.Models.Employee>
+
+  @{
+  ViewData["Title"] = "Index";
+  }
+
+  <section id="configuration">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title-wrap bar-success">
+              <h4 class="card-title">Employees Information</h4>
+            </div>
+          </div>
+          <div class="card-body collapse show">
+            <div class="card-block card-dashboard">
+
+              <div class="row" style="
+    justify-content: space-between;
+    align-items: center;
+">
+
+
+
+                <div class="col-sm-12 col-md-5">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                    <label>Search:
+                      <input type="search" id="search" onkeyup="Filter(event)" class="form-control form-control" placeholder=""
+                        aria-controls="DataTables_Table_0">
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <a class="btn" href="/Employee/Add">
+                    <button id="addRow" class="btn btn-primary py-2"> <i class="ft-plus"></i>&nbsp;
+                      Add new Employee</button></a>
+                </div>
+              </div>
+
+
+
+
+              <table  class="table table-hover ">
+                <thead class="bg-primary text-white">
+                 <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Date of birth</th>
+                    <th>Gender</th>
+                    <th>Hire date</th>
+                    <th>Salary</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="table">
+                  @foreach (var item in Model)
+                  {
+
+
+                  <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.ContactNumber</td>
+                    <td>@item.BirthDate.ToString("dd-MM-yyyy")</td>
+                    <td>@item.Gender</td>
+                    <td>@item.ContractDate.ToString("dd-MM-yyyy")</td>
+                    <td>@item.NetSalary</td>
+                    <td>@item.Start.ToString(@"hh\:mm")</td>
+                    <td>@item.End.ToString(@"hh\:mm")</td>
+                    <td> <a asp-action="Details" class="btn btn-outline-primary" asp-route-id=@item.Id>Details</a></td>
+                  </tr>
+
+                  }
+
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  @section Scripts{
+
+<script>    
+    function Filter()
+    {  var rows = document.querySelectorAll("tr");
+        var tableheader = document.querySelector("tr");
+        var name = event.target.value;
+        for(var i of rows)
+        {
+             i.style.display = "table-row";
+        }
+    
+
+      
+        for (var i of rows) 
+        {
+            if (!i.children[1].innerHTML.toLowerCase().includes(name.toLowerCase())) 
+            {
+                i.style.display = "none";
+
+            }
+        }
+        tableheader.style.display = "table-row";
+  };    
+
+
+  </script>
+
+  }

@@ -1,0 +1,56 @@
+﻿@model DepartmentViewModel
+
+<div class="col-sm-12">
+    <h2 class="content-header">Add Department Form</h2>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-success">
+                    <h4 class="card-title" id="horz-layout-basic">Department Information</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="px-3">
+                    <form class="form form-horizontal" asp-action="Edit" method="post">
+                        <div class="form-body">
+                            <h4 class="form-section">
+                                <i class="icon-user"></i> Details
+                            </h4>
+                            <div class="form-group row">
+                                <label class="col-md-3 label-control" for="projectinput1">Name: </label>
+                                <div class="col-md-9">
+                                    <input type="hidden" asp-for="Id" /> 
+                                    <input class="form-control"asp-for="Name"/>
+                                    <span class="text-danger ms-2" asp-validation-for="Name" ></span>
+
+                                </div>
+                            </div>                        
+                        <div class="form-actions">
+                            <a asp-action="Index" class="btn btn-danger mr-1">
+                                <i class="icon-trash"></i> Cancel
+                            </a>
+                            <button onclick="confirmAction()" type="submit" class="btn btn-success">
+                                <i class="icon-note"></i> Save
+                            </button>
+                            </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts{
+ <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    function confirmAction(){
+        if (!confirm("Are You sure?"))
+            event.preventDefault();
+    }   
+</script>
+}

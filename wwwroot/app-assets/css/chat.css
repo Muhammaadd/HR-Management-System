@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+    a:hover {
+        color: white;
+    }
+
+.mainContent {
+    min-height: 100vh;
+    background-color: #ececec;
+}
+
+.save-btn {
+    background-color: #28d094;
+    outline: none;
+}
+
+.header {
+    border-bottom: 1px dotted;
+}
+
+.logo {
+    width: 50px;
+}
+
+.aside {
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../../images/ChatImages/04.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 18px 3px #443b3b;
+}
+
+    .aside::before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #000000d1;
+        z-index: -1;
+    }
+
+.list {
+    font-size: 1.1em;
+    overflow-y: auto;
+}
+
+.item:hover {
+    background-color: #4e454582;
+    border-radius: 18px;
+}
+
+.profilPic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+/*
+  
+  ***********
+  
+  */
+* {
+    box-sizing: border-box;
+}
+
+.chatroom {
+    height: 685px
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+.content p {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.left-side, .messages-container {
+    overflow: auto;
+}
+
+.right-side {
+    padding: 0
+}
+
+.custom p {
+    font-weight: 500;
+}
+
+.chat-history {
+    width: fit-content;
+}
+
+.fixed {
+    position: sticky;
+    top: 20%;
+}
+
+.messages-container {
+    background-image: url(../../images/ChatImages/bg.jpg);
+    height: 605px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.message-shape {
+    max-width: 25em;
+    overflow-wrap: break-word;
+}
+
+.right-arrow {
+    margin-left: -19px;
+}
+
+.fa-caret-left {
+    margin-right: -19px;
+}
+
+.message {
+    margin-top: 30px;
+}
+
+.member {
+    cursor: pointer;
+    position: relative
+}
+    .member::before {
+        position: absolute;
+        content: '';
+        width: 105%;
+        height: 133%;
+        /* border-radius: 5px; */
+        background-color: rgb(246, 246, 246,.2);
+        border-right: 6px solid cornflowerblue;
+        left: 0;
+        top: -25px;
+        display: none;
+    }
+    .member:hover::before {
+        display: block;
+    }
+
+#message-holder {
+    border-radius: 2px 2px 2px 0px;
+}
+
+.message-con {
+    bottom: 0;
+    left: 0;
+}
+
+.chatheader {
+    border-left: 1px solid #ddd;
+}
+
+.search.mb-3.px-3 {
+    border-bottom: 1px solid #ddd;
+    padding: 28px 0 10px;
+}
+
+
+/*
+*************
+
+*/
