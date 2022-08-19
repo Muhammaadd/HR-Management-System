@@ -8,129 +8,129 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HRSystem
 build_property.RootNamespace = HRSystem
-build_property.ProjectDir = E:\ITI Matrials\Graduation Project\HR-System\
+build_property.ProjectDir = E:\My-Github\HR-Management-System\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\ITI Matrials\Graduation Project\HR-System
+build_property.MSBuildProjectDirectory = E:\My-Github\HR-Management-System
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Account/AccessDenied.cshtml]
+[E:/My-Github/HR-Management-System/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Account/Login.cshtml]
+[E:/My-Github/HR-Management-System/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Account/Register.cshtml]
+[E:/My-Github/HR-Management-System/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Attendance/Edit.cshtml]
+[E:/My-Github/HR-Management-System/Views/Attendance/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Attendance/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Attendance/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Chat/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Chat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Department/Add.cshtml]
+[E:/My-Github/HR-Management-System/Views/Department/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Department/Edit.cshtml]
+[E:/My-Github/HR-Management-System/Views/Department/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Department/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Employee/Add.cshtml]
+[E:/My-Github/HR-Management-System/Views/Employee/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Employee/Details.cshtml]
+[E:/My-Github/HR-Management-System/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Employee/Edit.cshtml]
+[E:/My-Github/HR-Management-System/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Employee/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Exception/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Exception/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZXB0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/GeneralSetting/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/GeneralSetting/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbFNldHRpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Group/AddNewGroup.cshtml]
+[E:/My-Github/HR-Management-System/Views/Group/AddNewGroup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBcQWRkTmV3R3JvdXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Group/Edit.cshtml]
+[E:/My-Github/HR-Management-System/Views/Group/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Group/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Group/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Home/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Home/Privacy.cshtml]
+[E:/My-Github/HR-Management-System/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Salary/EmpolyeeSalaryReport.cshtml]
+[E:/My-Github/HR-Management-System/Views/Salary/EmpolyeeSalaryReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXJ5XEVtcG9seWVlU2FsYXJ5UmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Salary/SalaryReport.cshtml]
+[E:/My-Github/HR-Management-System/Views/Salary/SalaryReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYXJ5XFNhbGFyeVJlcG9ydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Shared/_HrLayout.cshtml]
+[E:/My-Github/HR-Management-System/Views/Shared/_HrLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/My-Github/HR-Management-System/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/User/AddNewUser.cshtml]
+[E:/My-Github/HR-Management-System/Views/User/AddNewUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGROZXdVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/User/Edit.cshtml]
+[E:/My-Github/HR-Management-System/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/User/Index.cshtml]
+[E:/My-Github/HR-Management-System/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/_ViewImports.cshtml]
+[E:/My-Github/HR-Management-System/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/_ViewStart.cshtml]
+[E:/My-Github/HR-Management-System/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ITI Matrials/Graduation Project/HR-System/Views/Shared/_Layout.cshtml]
+[E:/My-Github/HR-Management-System/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1mxanlv0yq

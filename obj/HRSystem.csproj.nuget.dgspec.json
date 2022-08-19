@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ITI Matrials\\Graduation Project\\HR-System\\HRSystem.csproj": {}
+    "E:\\My-Github\\HR-Management-System\\HRSystem.csproj": {}
   },
   "projects": {
-    "E:\\ITI Matrials\\Graduation Project\\HR-System\\HRSystem.csproj": {
+    "E:\\My-Github\\HR-Management-System\\HRSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ITI Matrials\\Graduation Project\\HR-System\\HRSystem.csproj",
+        "projectUniqueName": "E:\\My-Github\\HR-Management-System\\HRSystem.csproj",
         "projectName": "HRSystem",
-        "projectPath": "E:\\ITI Matrials\\Graduation Project\\HR-System\\HRSystem.csproj",
+        "projectPath": "E:\\My-Github\\HR-Management-System\\HRSystem.csproj",
         "packagesPath": "C:\\Users\\MZ\\.nuget\\packages\\",
-        "outputPath": "E:\\ITI Matrials\\Graduation Project\\HR-System\\obj\\",
+        "outputPath": "E:\\My-Github\\HR-Management-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MZ\\AppData\\Roaming\\NuGet\\NuGet.Config",

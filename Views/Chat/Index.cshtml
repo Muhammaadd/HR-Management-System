@@ -221,7 +221,7 @@ var userId = document.getElementById("userId");
             members[i].children[0].children[1].style.color = 'black'
         }
         event.target.children[0].children[1].style.color = 'blue'
-        $.ajax({url: `http://localhost:5219/Chat/GetMessages?currentId=${currentId.value}&otherId=${userId}`, success: function(result){
+        $.ajax({url: `http://localhost:48267/Chat/GetMessages?currentId=${currentId.value}&otherId=${userId}`, success: function(result){
         console.log("currentid",currentId.value)
         console.log("otherid",userId.value)
         console.log(record)

@@ -44,7 +44,6 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Employee </th>
-                                    <th>Phone</th>
                                     <th>Salary</th>
                                     <th>Attendance </th>
                                     <th>Absence </th>
@@ -63,7 +62,6 @@
                                     <td>@i</td>                     
 
                                     <td>@item.EmployeeNameVM</td>
-                                    <td>@item.EmpolyeeContactNumberVM</td>
                                     <td>@item.MonthSalaryBeforeOperations</td>
                                     <td>@item.AttendanceDaysVM</td>
                                     <td>@item.AbsenceeDaysVM</td>
@@ -91,7 +89,11 @@
     </div>
 </div>
 
-
+<style>
+    .content-wrapper{
+        padding:0;
+    }
+</style>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 

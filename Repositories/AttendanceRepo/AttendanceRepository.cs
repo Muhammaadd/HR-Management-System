@@ -28,9 +28,22 @@ namespace HRSystem.Repositories.AttendanceRepo
         }
         public void UpdateAttendance(Attendance UpdatedAttendance, int Id)
         {
-            UpdatedAttendance.Id = Id;
-            context.Attendances.Update(UpdatedAttendance);
-            context.SaveChanges();
+            Attendance attendance = GetById(Id);
+            if(attendance!=null)
+            {
+                attendance.Start = UpdatedAttendance.Start;
+                attendance.End = UpdatedAttendance.End;
+                attendance.Absent = UpdatedAttendance.Absent;
+                attendance.BonusHours = UpdatedAttendance.BonusHours;
+                attendance.DiscountHours = UpdatedAttendance.DiscountHours;
+                context.SaveChanges();
+            }
+            else
+            {
+                AddAttendance(UpdatedAttendance);
+            }
+
+
         }
         public int? GetAttendanceOfDate(int id , DateTime Date)
         {

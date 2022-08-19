@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hr8bQa+Mv5kw7m1Gd2+Pe9ylLIDh6rGENG4oxyy0xz5nYV/+ERe9MuXK8S4kxtYbMuhT3avjb1rQqhXWdKcqaw==",
+  "dgSpecHash": "8ZLYk2Ms0b8DkF5PFWDKfyzZu3DhkzXFeaSNBhJVuBI0YL7u5DM3zeiAOR3ZNF/cEd6bWYclcC+XiHDOs1gUig==",
   "success": true,
-  "projectFilePath": "E:\\ITI Matrials\\Graduation Project\\HR-System\\HRSystem.csproj",
+  "projectFilePath": "E:\\My-Github\\HR-Management-System\\HRSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MZ\\.nuget\\packages\\closedxml\\0.96.0\\closedxml.0.96.0.nupkg.sha512",
     "C:\\Users\\MZ\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
