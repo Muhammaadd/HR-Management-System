@@ -214,22 +214,22 @@ var userId = document.getElementById("userId");
     function setFriendName(){
         messagesContainer.innerHTML =''
         friendName.innerHTML = event.target.children[0].children[1].innerHTML
-        userId = event.target.children[0].children[2].value
+        userId.value = event.target.children[0].children[2].value
         var members = document.querySelectorAll(".member")
         for (var i = 0; i < members.length;i++)
         {
             members[i].children[0].children[1].style.color = 'black'
         }
         event.target.children[0].children[1].style.color = 'blue'
-        $.ajax({url: `http://localhost:48267/Chat/GetMessages?currentId=${currentId.value}&otherId=${userId}`, success: function(result){
+        $.ajax({url: `http://localhost:48267/Chat/GetMessages?currentId=${currentId.value}&otherId=${userId.value}`, success: function(result){
         console.log("currentid",currentId.value)
         console.log("otherid",userId.value)
-        console.log(record)
+        console.log(result)
         for(var record of result)
        {
             if (record.currentUserId===currentId.value) 
                 CreateSendedMessagesStructure(record.message)
-            if(record.currentUserId===userId)
+            if(record.currentUserId===userId.value)
                 CreateReceivedMessagesStructure(record.message)
             messagesContainer.scroll({ top: messagesContainer.scrollHeight, behavior: "smooth"})
             console.log("My id",record.currentUserId)
